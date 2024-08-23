@@ -15,8 +15,8 @@ function first({className}) {
 
       <a href="index.html" className={`${styles.logo} d-flex align-items-center`}>
          {/* Uncomment the line below if you also wish to use an image logo  */}
-         {/* <img src="assets/img/logo.png" alt=""> */}
-        <h1 className={`sitename`}>Selecao</h1>
+         <img src="./img/auraLogo.png" alt=""/>
+        <h1 className={`sitename`}>Aura InfoTech</h1>
       </a>
 
       <nav id="navmenu" className={styles.navmenu}>
@@ -58,8 +58,8 @@ function first({className}) {
  
   <div className={`carousel-item active`}>
     <div className={styles["carousel-container"]}>
-      <h2 className={`animate__animated animate__fadeInDown`}>Welcome to <span>Selecao</span></h2>
-      <p className={`animate__animated animate__fadeInUp`}>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+      <h2 className={`animate__animated animate__fadeInDown`}>Unlock Agility with SAP Cloud Solutions</h2>
+      <p className={`animate__animated animate__fadeInUp`}>Empower your enterprise to adopt new business models, enhance productivity, and create long-term value with SAP's cutting-edge cloud solutions.</p>
       <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
     </div>
   </div>
@@ -67,8 +67,9 @@ function first({className}) {
   
   <div className={`carousel-item`}>
     <div className={styles["carousel-container"]}>
-      <h2 className={`animate__animated animate__fadeInDown`}>Lorem Ipsum Dolor</h2>
-      <p className={`animate__animated animate__fadeInUp`}>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+      <h2 className={`animate__animated animate__fadeInDown`}> Tailored for Growing Enterprises
+      </h2>
+      <p className={`animate__animated animate__fadeInUp`}>Ideal for businesses with strategic growth plans, S/4 HANA Cloud Public Edition supports critical functions like finance, sales, manufacturing, and more.</p>
       <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
     </div>
   </div>
@@ -76,8 +77,15 @@ function first({className}) {
   
   <div className={`carousel-item`}>
     <div className={styles["carousel-container"]}>
-      <h2 className={`animate__animated animate__fadeInDown`}>Sequi ea ut et est quaerat</h2>
-      <p className={`animate__animated animate__fadeInUp`}>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+      <h2 className={`animate__animated animate__fadeInDown`}> Industry-Leading Best Practices</h2>
+      <p className={`animate__animated animate__fadeInUp`}>Benefit from pre-configured best practices and industry-specific scenarios that optimize your operations and fuel your growth journey.</p>
+      <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
+    </div>
+  </div>
+  <div className={`carousel-item`}>
+    <div className={styles["carousel-container"]}>
+      <h2 className={`animate__animated animate__fadeInDown`}>  Future-Proof Your Business</h2>
+      <p className={`animate__animated animate__fadeInUp`}>With SAP S/4HANA Cloud Public Edition, scale your business confidently and explore limitless possibilities with seamless integrations and continuous innovation.</p>
       <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
     </div>
   </div>
@@ -108,18 +116,23 @@ function first({className}) {
 
     <div className={`col-lg-6 ${styles.content}`} data-aos="fade-up" data-aos-delay="100">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+      At Aura InfoTech, we stand at the forefront of digital transformation, helping businesses across the ASEAN and APAC regions unlock their full potential through innovative technology solutions. Our expertise spans across ERP, Cloud, CRM, Data Analytics, AI, and Offshore Technology Solutions, making us a one-stop partner for enterprises seeking to drive efficiency, agility, and growth in a rapidly evolving digital landscape.
+
       </p>
       <ul>
-        <li><i className={`bi bi-check2-circle`}></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-        <li><i className={`bi bi-check2-circle`}></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-        <li><i className={`bi bi-check2-circle`}></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
+        <li><i className={`bi bi-check2-circle`}></i> <span>SAP Expertise: Seamless SAP S/4 HANA Cloud integration for real-time insights.</span></li>
+        <li><i className={`bi bi-check2-circle`}></i> <span>Tailored Solutions: Industry-specific, pre-configured best practices for peak performance.</span></li>
+        <li><i className={`bi bi-check2-circle`}></i> <span>Innovative Technology: AI, machine learning, and data analytics to keep you ahead.</span></li>       
+        <li><i className={`bi bi-check2-circle`}></i> <span>Full Support: End-to-end guidance through your digital transformation journey.</span></li>
+        <li><i className={`bi bi-check2-circle`}></i> <span>Client Focus: Long-term partnerships with exceptional service and value.</span></li>
       </ul>
     </div>
 
     <div className={`col-lg-6`} data-aos="fade-up" data-aos-delay="200">
-      <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <p>At Aura InfoTech, we believe that the key to success lies in collaboration and innovation. Our team of experienced professionals works tirelessly to provide solutions that not only address today’s challenges but also anticipate tomorrow’s opportunities. We are driven by a shared vision of a digital future where businesses can operate with unprecedented agility, efficiency, and insight.
+      </p>
+      <p>Our strength lies not only in our technical capabilities but also in our commitment to understanding the unique challenges and opportunities our clients face. We work closely with our clients to design and implement tailored solutions that not only meet their current needs but also future-proof their operations.
+      </p>
       <a href="#" className={`${styles.readMore}`}><span>Read More</span><i className={`bi bi-arrow-right`}></i></a>
     </div>
 
@@ -136,25 +149,26 @@ function first({className}) {
     <li className={`nav-item col-3`}>
       <a className={`${styles["nav-link"]} ${styles.active} show`} data-bs-toggle="tab" data-bs-target="#features-tab-1">
         <i className={`bi bi-binoculars`}></i>
-        <h4 className={`d-none d-lg-block`}>Modi sit est dela pireda nest</h4>
+        <h4 className={`d-none d-lg-block`}>SAP S/4 HANA Cloud Integration</h4>
       </a>
     </li>
     <li className={`nav-item col-3`}>
       <a className={`${styles["nav-link"]}`} data-bs-toggle="tab" data-bs-target="#features-tab-2">
         <i className={`bi bi-box-seam`}></i>
-        <h4 className={`d-none d-lg-block`}>Unde praesenti mara setra le</h4>
+        <h4 className={`d-none d-lg-block`}> Industry-Specific Best Practices
+        </h4>
       </a>
     </li>
     <li className={`nav-item col-3`}>
       <a className={styles["nav-link"]} data-bs-toggle="tab" data-bs-target="#features-tab-3">
         <i className={`bi bi-brightness-high`}></i>
-        <h4 className={`d-none d-lg-block`}>Pariatur explica nitro dela</h4>
+        <h4 className={`d-none d-lg-block`}> Cutting-Edge Technology</h4>
       </a>
     </li>
     <li className={`nav-item col-3`}>
       <a className={styles["nav-link"]} data-bs-toggle="tab" data-bs-target="#features-tab-4">
         <i className={`bi bi-command`}></i>
-        <h4 className={`d-none d-lg-block`}>Nostrum qui dile node</h4>
+        <h4 className={`d-none d-lg-block`}>Proven Expertise</h4>
       </a>
     </li>
   </ul>
@@ -164,22 +178,20 @@ function first({className}) {
     <div className={`${styles["tab-pane"]} fade active show`} id="features-tab-1">
       <div className={`row`}>
         <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
-          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <h3>Transform Your Business with Expert SAP Consulting</h3>
           <p className={`fst-italic`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+          Unlock the full potential of your enterprise with SAP S/4 HANA Cloud. Our solutions provide seamless integration that delivers real-time insights and boosts operational efficiency. Designed to adapt to evolving business needs, our ERP system supports strategic growth, enabling companies to manage business changes swiftly and leverage advanced analytics for smarter decision-making.
+
           </p>
           <ul>
             <li><i className={`bi bi-check2-all`}></i>
-              <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+              <span>Real-Time Insights: Gain immediate visibility into business operations.</span>
             </li>
-            <li><i className={`bi bi-check2-all`}></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit</span>.</li>
-            <li><i className={`bi bi-check2-all`}></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+            <li><i className={`bi bi-check2-all`}></i> <span>Efficient Integration: Align effortlessly with existing systems.</span>.</li>
+            <li><i className={`bi bi-check2-all`}></i> <span>Scalable Solutions: Support future growth with adaptable technology.</span></li>
           </ul>
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+          Choosing the right partner for your SAP consulting needs is crucial for achieving your business goals. At Aura InfoTech, we stand out with our commitment to excellence and tailored solutions designed to drive growth and efficiency. Here’s why partnering with us will benefit your organization.
           </p>
         </div>
         <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
@@ -200,7 +212,8 @@ function first({className}) {
         <div className={`row`} data-aos="zoom-in" data-aos-delay="100">
           <div className={`col-xl-9 text-center text-xl-start`}>
             <h3>Call To Action</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Ready to transform your business? Get in touch with us today to explore how our expertise can drive growth and innovation for your organization. Let’s shape the future of your business together!
+            </p>
           </div>
           <div className={`col-xl-3 ${styles["cta-btn-container"]} text-center`}>
             <a className={`${styles["cta-btn"]} align-middle`} href="#">Call To Action</a>
@@ -222,78 +235,157 @@ function first({className}) {
 
     <div className={`row gy-4`}>
 
-      <div className={`col-lg-4 col-md-6`} data-aos="fade-up" data-aos-delay="100">
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="100">
         <div className={`${styles["service-item"]}  position-relative`}>
           <div className={styles.icon}>
             <i className={`bi bi-cash-stack`} style={{color: "#0dcaf0"}}></i>
           </div>
           <a href="service-details.html" className={`stretched-link`}>
-            <h3>Nesciunt Mete</h3>
+            <h3>SAP Solutions</h3>
           </a>
-          <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+          <p>Transform your operations with SAP S/4 HANA Cloud, offering real-time insights and seamless integration to drive growth and efficiency.
+          </p>
         </div>
       </div>
 
-      <div className={`col-lg-4 col-md-6`} data-aos="fade-up" data-aos-delay="200">
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="200">
         <div className={`${styles["service-item"]} position-relative`}>
           <div className={styles.icon}>
             <i className={`bi bi-calendar4-week`} style={{color: "#fd7e14"}}></i>
           </div>
           <a href="service-details.html" className={`stretched-link`}>
-            <h3>Eosle Commodi</h3>
+            <h3>SAP Services</h3>
           </a>
-          <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+          <p>Expert implementation and support tailored to your needs. Enhance your SAP systems with our comprehensive services.</p>
         </div>
       </div>
 
-      <div className={`col-lg-4 col-md-6`} data-aos="fade-up" data-aos-delay="300">
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="300">
         <div className={`${styles["service-item"]} position-relative`}>
           <div className={styles.icon}>
             <i className={`bi bi-chat-text`} style={{color: "#20c997"}}></i>
           </div>
           <a href="service-details.html" className={`stretched-link`}>
-            <h3>Ledo Markt</h3>
+            <h3>Cloud</h3>
           </a>
-          <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+          <p>Modernize your infrastructure with our scalable cloud solutions, designed to meet your evolving business requirements.</p>
         </div>
       </div>
 
-      <div className={`col-lg-4 col-md-6`} data-aos="fade-up" data-aos-delay="400">
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="400">
         <div className={`${styles["service-item"]} position-relative`}>
           <div className={styles.icon}>
             <i className={`bi bi-credit-card-2-front`} style={{color: "#df1529"}}></i>
           </div>
           <a href="service-details.html" className={`stretched-link`}>
-            <h3>Asperiores Commodit</h3>
+            <h3>Enterprise Analytics with Tableau</h3>
           </a>
-          <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+          <p>Leverage Tableau for powerful data visualization that drives smarter business decisions and strategic insights.</p>
         </div>
       </div>
 
-      <div className={`col-lg-4 col-md-6`} data-aos="fade-up" data-aos-delay="500">
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="500">
         <div className={`${styles["service-item"]} position-relative`}>
           <div className={styles.icon}>
             <i className={`bi bi-globe`} style={{color: "#6610f2"}}></i>
           </div>
           <a href="service-details.html" className={`stretched-link`}>
-            <h3>Velit Doloremque</h3>
+            <h3>Power BI
+            </h3>
           </a>
-          <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+          <p>Turn data into actionable insights with Power BI’s interactive dashboards and reports, enhancing your decision-making process.</p>
         </div>
       </div>
 
-      <div className={`col-lg-4 col-md-6`} data-aos="fade-up" data-aos-delay="600">
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="600">
         <div className={`${styles["service-item"]} position-relative`}>
           <div className={styles.icon}>
             <i className={`bi bi-clock`} style={{color: "#f3268c"}}></i>
           </div>
           <a href="service-details.html" className={`stretched-link`}>
-            <h3>Dolori Architecto</h3>
+            <h3>Technology Services</h3>
           </a>
-          <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+          <p>Optimize your IT systems with our technology solutions, designed to improve efficiency and operational effectiveness.</p>
         </div>
       </div>
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="600">
+        <div className={`${styles["service-item"]} position-relative`}>
+          <div className={styles.icon}>
+            <i className={`bi bi-clock`} style={{color: "#f3268c"}}></i>
+          </div>
+          <a href="service-details.html" className={`stretched-link`}>
+            <h3>Consulting
+            </h3>
+          </a>
+          <p>Receive strategic guidance to navigate challenges and drive business growth with our consulting services.
+          </p>
+        </div>
+      </div>
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="600">
+        <div className={`${styles["service-item"]} position-relative`}>
+          <div className={styles.icon}>
+            <i className={`bi bi-clock`} style={{color: "#f3268c"}}></i>
+          </div>
+          <a href="service-details.html" className={`stretched-link`}>
+            <h3>Business Processing</h3>
+          </a>
+          <p>Enhance your business operations with expert consulting to streamline processes and boost productivity.</p>
+        </div>
+      </div>
+      {/* <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="500">
+        <div className={`${styles["service-item"]} position-relative`}>
+          <div className={styles.icon}>
+            <i className={`bi bi-globe`} style={{color: "#6610f2"}}></i>
+          </div>
+          <a href="service-details.html" className={`stretched-link`}>
+            <h3>Offshore Development Center
 
+            </h3>
+          </a>
+          <p>Access skilled talent and cost-effective solutions through our offshore development center for your technology projects.
+          </p>
+        </div>
+      </div>
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="500">
+        <div className={`${styles["service-item"]} position-relative`}>
+          <div className={styles.icon}>
+            <i className={`bi bi-globe`} style={{color: "#6610f2"}}></i>
+          </div>
+          <a href="service-details.html" className={`stretched-link`}>
+            <h3>Staff Augmentation
+
+            </h3>
+          </a>
+          <p>Strengthen your team with additional expertise to meet project demands efficiently through our staff augmentation services.
+          </p>
+        </div>
+      </div>
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="500">
+        <div className={`${styles["service-item"]} position-relative`}>
+          <div className={styles.icon}>
+            <i className={`bi bi-globe`} style={{color: "#6610f2"}}></i>
+          </div>
+          <a href="service-details.html" className={`stretched-link`}>
+            <h3>Application Management Services (AMS)
+
+            </h3>
+          </a>
+          <p>Maintain and optimize your SAP applications with our comprehensive management services for enhanced performance.
+          </p>
+        </div>
+      </div>
+      <div className={`col-lg-3 col-md-6`} data-aos="fade-up" data-aos-delay="500">
+        <div className={`${styles["service-item"]} position-relative`}>
+          <div className={styles.icon}>
+            <i className={`bi bi-globe`} style={{color: "#6610f2"}}></i>
+          </div>
+          <a href="service-details.html" className={`stretched-link`}>
+            <h3>Migration Services
+            </h3>
+          </a>
+          <p>Ensure a smooth transition with expert migration services, facilitating efficient data migration and system integration.</p>
+        </div>
+      </div> */}
   </div>
 
 </div>
@@ -654,7 +746,7 @@ function first({className}) {
               </div>
               
 
-              <div className={styles["accordion-item"]}>
+              <div className={[styles["accordion-item"]]}>
                 <h2 className={`mb-0`}>
                   <button className={`btn ${styles["btn-link"]} collapsed`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2">
                 How to create your paypal account?
@@ -883,7 +975,7 @@ function first({className}) {
       
       <div className={`container ${styles["section-title"]}`} data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Contact Us</p>
+        <p>Ready to Transform Your Business with SAP?</p>
       </div>
 
       <div className={`container`} data-aos="fade" data-aos-delay="100">
@@ -911,7 +1003,7 @@ function first({className}) {
               <i className={`bi bi-envelope flex-shrink-0`}></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <p>sales@aurainfotech.sg</p>
               </div>
             </div>
 
@@ -957,7 +1049,7 @@ function first({className}) {
     </main>
     <footer id="footer" className={`${styles.footer} ${styles["dark-background"]}`}>
     <div className={`container`}>
-      <h3 className={`sitename`}>Selecao</h3>
+      <h3 className={`sitename`}>Aura InfoTech</h3>
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div className={`${styles["social-links"]} d-flex justify-content-center`}>
         <a href=""><i className={`bi bi-twitter-x`}></i></a>
@@ -968,11 +1060,11 @@ function first({className}) {
       </div>
       <div className={`container`}>
         <div className={styles.copyright}>
-          <span>Copyright</span> <strong className={`px-1 sitename`}>Selecao</strong> <span>All Rights Reserved</span>
+          <span>Copyright</span> <strong className={`px-1 sitename`}>Aura InfoTech</strong> <span>All Rights Reserved</span>
         </div>
-        <div className={styles.credits}>
+        {/* <div className={styles.credits}>
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        </div> */}
       </div>
     </div>
   </footer>
