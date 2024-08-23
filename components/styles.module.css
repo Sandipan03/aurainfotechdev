@@ -637,3 +637,77 @@
   color: color-mix(in srgb, #ef6603, transparent 25%);
   text-decoration: none;
 } */
+.faq .content-subtitle {
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: block;
+  color: #444444;
+}
+
+.faq .content-title {
+  color: #2a2c39;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.faq p {
+  line-height: 1.7;
+  color: #444444;
+}
+
+.faq .custom-accordion .accordion-item {
+  background-color: white;
+  margin-bottom: 0px;
+  position: relative;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.faq .custom-accordion .accordion-item .btn-link {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  text-align: left;
+  color: #444444;
+  border: none;
+  padding-left: 40px;
+  border-radius: 0;
+  position: relative;
+  background-color: color-mix(in srgb,#444444, transparent 94%);
+}
+
+.faq .custom-accordion .accordion-item .btn-link:before {
+  content: "\f282";
+  display: inline-block;
+  font-family: "bootstrap-icons" !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.faq .custom-accordion .accordion-item .btn-link[aria-expanded=true] {
+  color: #ef6603;
+}
+
+.faq .custom-accordion .accordion-item .btn-link[aria-expanded=true]:before {
+  font-family: "bootstrap-icons" !important;
+  content: "\f286";
+  position: absolute;
+  color: #ef6603;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq .custom-accordion .accordion-item .accordion-body {
+  padding: 20px 20px 20px 20px;
+  color: #444444;
+}

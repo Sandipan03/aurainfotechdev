@@ -84,7 +84,7 @@ function first({className}) {
           </p>
           <ul>
             <li><i className={`bi bi-check2-all`}></i>
-              <spab>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</spab>
+              <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
             </li>
             <li><i className={`bi bi-check2-all`}></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit</span>.</li>
             <li><i className={`bi bi-check2-all`}></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
@@ -373,9 +373,9 @@ function first({className}) {
                   <i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i>
                 </div>
                 <p>
-                  <i className={`bi bi-quote quote-icon-left`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-left"]}`}></i>
                   <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i className={`bi bi-quote quote-icon-right`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-right"]}`}></i>
                 </p>
               </div>
             </div>
@@ -389,9 +389,9 @@ function first({className}) {
                   <i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i>
                 </div>
                 <p>
-                  <i className={`bi bi-quote quote-icon-left`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-left"]}`}></i>
                   <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i className={`bi bi-quote quote-icon-right`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-right"]}`}></i>
                 </p>
               </div>
             </div>
@@ -405,9 +405,9 @@ function first({className}) {
                   <i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i>
                 </div>
                 <p>
-                  <i className={`bi bi-quote quote-icon-left`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-left"]}`}></i>
                   <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i className={`bi bi-quote quote-icon-right`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-right"]}`}></i>
                 </p>
               </div>
             </div>
@@ -421,9 +421,9 @@ function first({className}) {
                   <i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i>
                 </div>
                 <p>
-                  <i className={`bi bi-quote quote-icon-left`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-left"]}`}></i>
                   <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i className={`bi bi-quote quote-icon-right`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-right"]}`}></i>
                 </p>
               </div>
             </div>
@@ -437,9 +437,9 @@ function first({className}) {
                   <i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i>
                 </div>
                 <p>
-                  <i className={`bi bi-quote quote-icon-left`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-left"]}`}></i>
                   <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i className={`bi bi-quote quote-icon-right`}></i>
+                  <i className={`bi bi-quote ${styles["quote-icon-right"]}`}></i>
                 </p>
               </div>
             </div>
@@ -536,6 +536,77 @@ function first({className}) {
 
       </div>
 
+    </section>
+    
+    <section id="faq" className={`${styles.faq} ${styles.section}`}>
+      
+      <div className={`container ${styles["section-title"]}`} data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Frequently Asked Questions</p>
+      </div>
+
+      <div className={`container`} data-aos="fade-up">
+        <div className={`row`}>
+          <div className={`col-12`}>
+            <div className={styles["custom-accordion"]} id="accordion-faq">
+              <div className={styles["accordion-item"]}>
+                <h2 className={`mb-0`}>
+                  <button className={`btn ${styles["btn-link"]}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
+                    How to download and register?
+                  </button>
+                </h2>
+
+                <div id="collapse-faq-1" className={`collapse show`} aria-labelledby="headingOne" data-parent="#accordion-faq">
+                  <div className={styles["accordion-body"]}>
+                    Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind texts. Separated
+                    they live in Bookmarksgrove right at the coast of the Semantics,
+                    a large language ocean.
+                  </div>
+                </div>
+              </div>
+              
+
+              <div className={styles["accordion-item"]}>
+                <h2 className={`mb-0`}>
+                  <button className={`btn ${styles["btn-link"]} collapsed`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2">
+                How to create your paypal account?
+              </button>
+            </h2>
+            <div id=" collapse-faq-2" className={`collapse`} aria-labelledby="headingTwo" data-parent="#accordion-faq">
+                    <div className={styles["accordion-body"]}>
+                      A small river named Duden flows by their place and supplies it
+                      with the necessary regelialia. It is a paradisematic country, in
+                      which roasted parts of sentences fly into your mouth.
+                    </div>
+              </div>
+            </div>
+            
+
+            <div className={styles["accordion-item"]}>
+              <h2 className={`mb-0`}>
+                <button className={`btn ${styles["btn-link"]} collapsed`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-3">
+                  How to link your paypal and bank account?
+                </button>
+              </h2>
+
+              <div id="collapse-faq-3" className={`collapse`} aria-labelledby="headingThree" data-parent="#accordion-faq">
+                <div className={styles["accordion-body"]}>
+                  When she reached the first hills of the Italic Mountains, she
+                  had a last view back on the skyline of her hometown
+                  Bookmarksgrove, the headline of Alphabet Village and the subline
+                  of her own road, the Line Lane. Pityful a rethoric question ran
+                  over her cheek, then she continued her way.
+                </div>
+              </div>
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
+      </div>
+      
     </section>
         </div>
     
