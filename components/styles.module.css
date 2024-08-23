@@ -1317,7 +1317,7 @@
   flex-direction: column;
   text-align: center;
   position: relative;
-  min-height: 75vh;
+  min-height: 500px;
   padding-top: 60px;
 }
 
@@ -1385,7 +1385,7 @@
 
 @media (max-width: 768px) {
   .hero .carousel-container {
-    min-height: 90vh;
+    min-height: 500px;
   }
 
   .hero h2 {

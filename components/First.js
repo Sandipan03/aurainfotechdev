@@ -51,7 +51,7 @@ function first({className}) {
 
     </div>
   </header>
-  {/* <section id="hero" className={`${styles.hero} ${styles.section} ${styles["dark-background"]}`}>
+  <section id="hero" className={`${styles.hero} ${styles.section} ${styles["dark-background"]}`}>
 
 <div id="hero-carousel" data-bs-interval="5000" className={`container carousel carousel-fade`} data-bs-ride="carousel">
 
@@ -93,7 +93,7 @@ function first({className}) {
 </div>
 
 
-</section> */}
+</section>
 
       <section id="about" className={`${styles.about} ${styles.section}`}>
 
