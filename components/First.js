@@ -8,7 +8,107 @@ function first({className}) {
   return (
     <div className={className} style={{}}>
         <div className={styles["index-page"]}>
-        <section id="about" className={`${styles.about} ${styles.section}`}>
+        <header id="header" className={`${styles.header} d-flex align-items-center fixed-top`}>
+    <div className={`container-fluid container-xl position-relative d-flex align-items-center justify-content-between`}>
+
+      <a href="index.html" className={`${styles.logo} d-flex align-items-center`}>
+         {/* Uncomment the line below if you also wish to use an image logo  */}
+         {/* <img src="assets/img/logo.png" alt=""> */}
+        <h1 className={`sitename`}>Selecao</h1>
+      </a>
+
+      <nav id="navmenu" className={styles.navmenu}>
+        <ul>
+          <li><a href="#hero" className={`active`}>Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li className={styles.dropdown}><a href="#"><span>Dropdown</span> <i className={`bi bi-chevron-down toggle-dropdown`}></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li className={styles.dropdown}><a href="#"><span>Deep Dropdown</span> <i className={`bi bi-chevron-down toggle-dropdown`}></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i className={`${styles["mobile-nav-toggle"]} d-xl-none bi bi-list`}></i>
+      </nav>
+
+    </div>
+  </header>
+    <main className={styles.main}>
+  <section id="hero" className={`${styles.hero} ${styles.section} ${styles["dark-background"]}`}>
+
+<div id="hero-carousel" data-bs-interval="5000" className={`container carousel carousel-fade`} data-bs-ride="carousel">
+
+ 
+  <div className={`carousel-item active`}>
+    <div className={styles["carousel-container"]}>
+      <h2 className={`animate__animated animate__fadeInDown`}>Welcome to <span>Selecao</span></h2>
+      <p className={`animate__animated animate__fadeInUp`}>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+      <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
+    </div>
+  </div>
+
+  
+  <div className={`carousel-item`}>
+    <div className={styles["carousel-container"]}>
+      <h2 className={`animate__animated animate__fadeInDown`}>Lorem Ipsum Dolor</h2>
+      <p className={`animate__animated animate__fadeInUp`}>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+      <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
+    </div>
+  </div>
+
+  
+  <div className={`carousel-item`}>
+    <div className={styles["carousel-container"]}>
+      <h2 className={`animate__animated animate__fadeInDown`}>Sequi ea ut et est quaerat</h2>
+      <p className={`animate__animated animate__fadeInUp`}>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+      <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
+    </div>
+  </div>
+
+  <a className={styles["carousel-control-prev"]} href="#hero-carousel" role="button" data-bs-slide="prev">
+    <span className={`${styles["carousel-control-prev-icon"]} bi bi-chevron-left`} aria-hidden="true"></span>
+  </a>
+
+  <a className={styles["carousel-control-next"]} href="#hero-carousel" role="button" data-bs-slide="next">
+    <span className={`${styles["carousel-control-next-icon"]} bi bi-chevron-right`} aria-hidden="true"></span>
+  </a>
+
+</div>
+
+{/* <svg className={styles["hero-waves"]} xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+  <defs>
+    <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+  </defs>
+  <g className={styles.wave1}>
+    <use xlink:href="#wave-path" x="50" y="3"></use>
+  </g>
+  <g className={styles.wave2}>
+    <use xlink:href="#wave-path" x="50" y="0"></use>
+  </g>
+  <g className={styles.wave3}>
+    <use xlink:href="#wave-path" x="50" y="9"></use>
+  </g>
+</svg> */}
+
+</section>
+
+      <section id="about" className={`${styles.about} ${styles.section}`}>
 
 
 <div className={`${styles.sectionTitle} container`} data-aos="fade-up">
@@ -608,6 +708,287 @@ function first({className}) {
       </div>
       
     </section>
+    <section id="team" className={`${styles.team} ${styles.section}`}>
+
+      
+      <div className={`container ${styles["section-title"]}` }data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Our Hardworking Team</p>
+      </div>
+      <div className={`container`}>
+
+        <div className={`row gy-4`}>
+
+          <div className={`col-lg-3 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="100">
+            <div className={styles["team-member"]}>
+              <div className={styles["member-img"]}>
+                <img src="./img/team/team-1.jpg" className={`img-fluid`} alt=""/>
+                <div className={styles.social}>
+                  <a href=""><i className={`bi bi-twitter-x`}></i></a>
+                  <a href=""><i className={`bi bi-facebook`}></i></a>
+                  <a href=""><i className={`bi bi-instagram`}></i></a>
+                  <a href=""><i className={`bi bi-linkedin`}></i></a>
+                </div>
+              </div>
+              <div className={styles["member-info"]}>
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={`col-lg-3 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="200">
+            <div className={styles["team-member"]}>
+              <div className={styles["member-img"]}>
+                <img src="./img/team/team-2.jpg" className={`img-fluid`} alt=""/>
+                <div className={styles.social}>
+                  <a href=""><i className={`bi bi-twitter-x`}></i></a>
+                  <a href=""><i className={`bi bi-facebook`}></i></a>
+                  <a href=""><i className={`bi bi-instagram`}></i></a>
+                  <a href=""><i className={`bi bi-linkedin`}></i></a>
+                </div>
+              </div>
+              <div className={styles["member-info"]}>
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={`col-lg-3 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="300">
+            <div className={styles["team-member"]}>
+              <div className={styles["member-img"]}>
+                <img src="./img/team/team-3.jpg" className={`img-fluid`} alt=""/>
+                <div className={styles.social}>
+                  <a href=""><i className={`bi bi-twitter-x`}></i></a>
+                  <a href=""><i className={`bi bi-facebook`}></i></a>
+                  <a href=""><i className={`bi bi-instagram`}></i></a>
+                  <a href=""><i className={`bi bi-linkedin`}></i></a>
+                </div>
+              </div>
+              <div className={styles["member-info"]}>
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={`col-lg-3 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="400">
+            <div className={styles["team-member"]}>
+              <div className={styles["member-img"]}>
+                <img src="./img/team/team-4.jpg" className={`img-fluid`} alt=""/>
+                <div className={styles.social}>
+                  <a href=""><i className={`bi bi-twitter-x`}></i></a>
+                  <a href=""><i className={`bi bi-facebook`}></i></a>
+                  <a href=""><i className={`bi bi-instagram`}></i></a>
+                  <a href=""><i className={`bi bi-linkedin`}></i></a>
+                </div>
+              </div>
+              <div className={styles["member-info"]}>
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="recent-posts" className={`${styles["recent-posts"]} ${styles.section}`}>
+
+      
+      <div className={`container ${styles["section-title"]}`} data-aos="fade-up">
+        <h2>Recent Posts</h2>
+        <p>Recent Blog Posts<br/></p>
+      </div>
+
+      <div className={`container`}>
+
+        <div className={`row gy-4`}>
+
+          <div className={`col-xl-4 col-md-6`} data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div className={styles["post-img"]}>
+                <img src="./img/blog/blog-1.jpg" alt="" className={`img-fluid`}/>
+              </div>
+
+              <p className={styles["post-category"]}>Politics</p>
+
+              <h2 className={styles.title}>
+                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+              </h2>
+
+              <div className={`d-flex align-items-center`}>
+                <img src="./img/blog/blog-author.jpg" alt="" className={`img-fluid ${styles["post-author-img"]} flex-shrink-0`}/>
+                <div className={`post-meta`}>
+                  <p className={`post-author`}>Maria Doe</p>
+                  <p className={styles["post-date"]}>
+                    <time dateTime="2022-01-01">Jan 1, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+          <div className={`col-xl-4 col-md-6`} data-aos="fade-up" data-aos-delay="200">
+            <article>
+
+              <div className={styles["post-img"]}>
+                <img src="./img/blog/blog-2.jpg" alt="" className={`img-fluid`}/>
+              </div>
+
+              <p className={`post-category`}>Sports</p>
+
+              <h2 className={styles.title}>
+                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+              </h2>
+
+              <div className={`d-flex align-items-center`}>
+                <img src="./img/blog/blog-author-2.jpg" alt="" className={`img-fluid ${styles["post-author-img"]} flex-shrink-0`}/>
+                <div className={`post-meta`}>
+                  <p className={styles["post-author"]}>Allisa Mayer</p>
+                  <p className={styles["post-date"]}>
+                    <time dateTime="2022-01-01">Jun 5, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+          <div className={`col-xl-4 col-md-6`} data-aos="fade-up" data-aos-delay="300">
+            <article>
+
+              <div className={styles["post-img"]}>
+                <img src="./img/blog/blog-3.jpg" alt="" className={`img-fluid`}/>
+              </div>
+
+              <p className={styles["post-category"]}>Entertainment</p>
+
+              <h2 className={styles.title}>
+                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+              </h2>
+
+              <div className={`d-flex align-items-center`}>
+                <img src="./img/blog/blog-author-3.jpg" alt="" className={`img-fluid ${styles["post-author-img"]} flex-shrink-0`}/>
+                <div className={`post-meta`}>
+                  <p className={styles["post-author"]}>Mark Dower</p>
+                  <p className={styles["post-date"]}>
+                    <time dateTime="2022-01-01">Jun 22, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="contact" className={`${styles.contact} ${styles.section}`}>
+
+      
+      <div className={`container ${styles["section-title"]}`} data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div>
+
+      <div className={`container`} data-aos="fade" data-aos-delay="100">
+
+        <div className={`row gy-4`}>
+
+          <div className={`col-lg-4`}>
+            <div className={`${styles["info-item"]} d-flex`} data-aos="fade-up" data-aos-delay="200">
+              <i className={`bi bi-geo-alt flex-shrink-0`}></i>
+              <div>
+                <h3>Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+
+            <div className={`${styles["info-item"]} d-flex`} data-aos="fade-up" data-aos-delay="300">
+              <i className={`bi bi-telephone flex-shrink-0`}></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+
+            <div className={`${styles["info-item"]} d-flex`} data-aos="fade-up" data-aos-delay="400">
+              <i className={`bi bi-envelope flex-shrink-0`}></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@example.com</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div className={`col-lg-8`}>
+            <form action="forms/contact.php" method="post" className={styles["php-email-form"]} data-aos="fade-up" data-aos-delay="200">
+              <div className={`row gy-4`}>
+
+                <div className={`col-md-6`}>
+                  <input type="text" name="name" className={`form-control`} placeholder="Your Name" required=""/>
+                </div>
+
+                <div className={`col-md-6 `}>
+                  <input type="email" className={`form-control`} name="email" placeholder="Your Email" required=""/>
+                </div>
+
+                <div className={`col-md-12`}>
+                  <input type="text" className={`form-control`} name="subject" placeholder="Subject" required=""/>
+                </div>
+
+                <div className={`col-md-12`}>
+                  <textarea className={`form-control`} name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div className={`col-md-12 text-center`}>
+                  <div className={styles.loading}>Loading</div>
+                  <div className={styles["error-message"]}></div>
+                  <div className={styles["sent-message"]}>Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    </main>
+    <footer id="footer" className={`${styles.footer} ${styles["dark-background"]}`}>
+    <div className={`container`}>
+      <h3 className={`sitename`}>Selecao</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div className={`${styles["social-links"]} d-flex justify-content-center`}>
+        <a href=""><i className={`bi bi-twitter-x`}></i></a>
+        <a href=""><i className={`bi bi-facebook`}></i></a>
+        <a href=""><i className={`bi bi-instagram`}></i></a>
+        <a href=""><i className={`bi bi-skype`}></i></a>
+        <a href=""><i className={`bi bi-linkedin`}></i></a>
+      </div>
+      <div className={`container`}>
+        <div className={styles.copyright}>
+          <span>Copyright</span> <strong className={`px-1 sitename`}>Selecao</strong> <span>All Rights Reserved</span>
+        </div>
+        <div className={styles.credits}>
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
         </div>
     
     </div>
