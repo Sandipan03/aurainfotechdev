@@ -1,10 +1,24 @@
 /**@format */
-import React from 'react'
+import React, {useState,useEffect} from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './styles.module.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function first({className}) {
+  const [features1, setfeatures1] = useState(true)
+  const [features2, setfeatures2] = useState(false)
+  const [features3, setfeatures3] = useState(false)
+  const [features4, setfeatures4] = useState(false)
+  const [headClicked, setheadClicked] = useState('home')
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
   return (
     <div className={className} style={{}}>
         <div className={styles["index-page"]}>
@@ -21,12 +35,12 @@ function first({className}) {
 
       <nav id="navmenu" className={styles.navmenu}>
         <ul>
-          <li><a href="#hero" className={styles.active}>Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#hero" className={headClicked==='home'?styles.active:''} onClick={()=>{setheadClicked('home')}}>Home</a></li>
+          <li><a href="#about" className={headClicked==='about'?styles.active:''} onClick={()=>{setheadClicked('about')}}>About</a></li>
+          <li><a href="#services" className={headClicked==='services'?styles.active:''} onClick={()=>{setheadClicked('services')}}>Services</a></li>
+          <li><a href="#portfolio" className={headClicked==='portfolio'?styles.active:''} onClick={()=>{setheadClicked('portfolio')}}>Portfolio</a></li>
+          <li><a href="#team" className={headClicked==='team'?styles.active:''} onClick={()=>{setheadClicked('team')}}>Team</a></li>
+          <li><a href="blog.html" className={headClicked==='blog'?styles.active:''} onClick={()=>{setheadClicked('blog')}}>Blog</a></li>
           <li className={styles.dropdown}><a href="#"><span>Dropdown</span> <i className={`bi bi-chevron-down toggle-dropdown`}></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -44,7 +58,7 @@ function first({className}) {
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" className={headClicked==='contact'?styles.active:''} onClick={()=>{setheadClicked('contact')}}>Contact</a></li>
         </ul>
         <i className={`${styles["mobile-nav-toggle"]} d-xl-none bi bi-list`}></i>
       </nav>
@@ -56,7 +70,7 @@ function first({className}) {
 <div id="hero-carousel" data-bs-interval="5000" className={`container carousel carousel-fade`} data-bs-ride="carousel">
 
  
-  <div className={`carousel-item active`}>
+  <div className={`carousel-item active`} >
     <div className={styles["carousel-container"]}>
       <h2 className={`animate__animated animate__fadeInDown`}>Unlock Agility with SAP Cloud Solutions</h2>
       <p className={`animate__animated animate__fadeInUp`}>Empower your enterprise to adopt new business models, enhance productivity, and create long-term value with SAP's cutting-edge cloud solutions.</p>
@@ -146,27 +160,27 @@ function first({className}) {
 <div className={`container`}>
 
   <ul className={`nav ${styles["nav-tabs"]} row  d-flex`} data-aos="fade-up" data-aos-delay="100">
-    <li className={`nav-item col-3`}>
-      <a className={`${styles["nav-link"]} ${styles.active} show`} data-bs-toggle="tab" data-bs-target="#features-tab-1">
+    <li className={`nav-item col-3`} onClick={()=>{setfeatures2(false);setfeatures3(false);setfeatures4(false);setfeatures1(true);}}>
+      <a className={`${styles["nav-link"]} ${features1?styles.active:''} show`} data-bs-toggle="tab" data-bs-target="#features-tab-1">
         <i className={`bi bi-binoculars`}></i>
         <h4 className={`d-none d-lg-block`}>SAP S/4 HANA Cloud Integration</h4>
       </a>
     </li>
-    <li className={`nav-item col-3`}>
-      <a className={`${styles["nav-link"]}`} data-bs-toggle="tab" data-bs-target="#features-tab-2">
+    <li className={`nav-item col-3`} onClick={()=>{setfeatures1(false);setfeatures3(false);setfeatures4(false);setfeatures2(true);}}>
+      <a className={`${styles["nav-link"]} ${features2?styles.active:''}`} data-bs-toggle="tab" data-bs-target="#features-tab-2">
         <i className={`bi bi-box-seam`}></i>
         <h4 className={`d-none d-lg-block`}> Industry-Specific Best Practices
         </h4>
       </a>
     </li>
-    <li className={`nav-item col-3`}>
-      <a className={styles["nav-link"]} data-bs-toggle="tab" data-bs-target="#features-tab-3">
+    <li className={`nav-item col-3`} onClick={()=>{setfeatures1(false);setfeatures2(false);setfeatures4(false);setfeatures3(true);}}>
+      <a className={`${styles["nav-link"]} ${features3?styles.active:''}`} data-bs-toggle="tab" data-bs-target="#features-tab-3">
         <i className={`bi bi-brightness-high`}></i>
         <h4 className={`d-none d-lg-block`}> Cutting-Edge Technology</h4>
       </a>
     </li>
-    <li className={`nav-item col-3`}>
-      <a className={styles["nav-link"]} data-bs-toggle="tab" data-bs-target="#features-tab-4">
+    <li className={`nav-item col-3`} onClick={()=>{setfeatures1(false);setfeatures3(false);setfeatures2(false);setfeatures4(true);}}>
+      <a className={`${styles["nav-link"]} ${features4?styles.active:''}`} data-bs-toggle="tab" data-bs-target="#features-tab-4">
         <i className={`bi bi-command`}></i>
         <h4 className={`d-none d-lg-block`}>Proven Expertise</h4>
       </a>
@@ -175,7 +189,7 @@ function first({className}) {
 
   <div className={styles["tab-content"]} data-aos="fade-up" data-aos-delay="200">
 
-    <div className={`${styles["tab-pane"]} fade active show`} id="features-tab-1">
+ { features1 &&  <div className={`${styles["tab-pane"]} fade active show`} id="features-tab-1" >
       <div className={`row`}>
         <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
           <h3>Transform Your Business with Expert SAP Consulting</h3>
@@ -187,7 +201,7 @@ function first({className}) {
             <li><i className={`bi bi-check2-all`}></i>
               <span>Real-Time Insights: Gain immediate visibility into business operations.</span>
             </li>
-            <li><i className={`bi bi-check2-all`}></i> <span>Efficient Integration: Align effortlessly with existing systems.</span>.</li>
+            <li><i className={`bi bi-check2-all`}></i> <span>Efficient Integration: Align effortlessly with existing systems.</span></li>
             <li><i className={`bi bi-check2-all`}></i> <span>Scalable Solutions: Support future growth with adaptable technology.</span></li>
           </ul>
           <p>
@@ -198,8 +212,79 @@ function first({className}) {
           <img src="./img/working-1.jpg" alt="" className={`img-fluid`}/>
         </div>
       </div>
-    </div>
+    </div>}
+    {features2 && <div className={`${styles["tab-pane"]} fade show`} id="features-tab-2" >
+            <div className={`row`}>
+              <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
+                <h3>Industry-Specific Best Practices</h3>
+                <p>
+                Our industry-specific solutions are pre-configured with best practices tailored to your sector, ensuring optimal performance and efficiency. Whether your focus is on manufacturing, retail, consumer products, industrial products, or another industry, we provide solutions designed to meet your unique needs and support your strategic growth objectives.
 
+                </p>
+                {/* <p className={`fst-italic`}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p> */}
+                <ul>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Pre-Configured Solutions: Best practices for various industries.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Operational Efficiency: Optimized performance for different sectors.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Custom Fit: Solutions tailored to your industry’s needs.</span></li>
+                  {/* <li><i className={`bi bi-check2-all`}></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li> */}
+                </ul>
+              </div>
+              <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
+                <img src="./img/working-2.jpg" alt="" className={`img-fluid`}/>
+              </div>
+            </div>
+          </div>}
+
+         {features3 && <div className={`${styles["tab-pane"]} fade show`} id="features-tab-3" >
+            <div className={`row`}>
+              <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
+                <h3>Advanced Technology</h3>
+                <p>
+                Stay competitive with our advanced technology solutions, including AI, machine learning, and data analytics. These tools are integrated into your business strategy to drive innovation and enhance efficiency. Embrace cutting-edge technology that provides predictive insights and automates processes, keeping your business at the forefront of industry advancements.
+
+                </p>
+                <ul>
+                  <li><i className={`bi bi-check2-all`}></i> <span>AI Integration: Enhance decision-making with artificial intelligence.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Machine Learning: Automate processes and improve accuracy.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Data Analytics: Gain predictive insights and optimize strategies.</span></li>
+                </ul>
+                {/* <p className={`fst-italic`}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p> */}
+              </div>
+              <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
+                <img src="./img/working-3.jpg" alt="" className={`img-fluid`}/>
+              </div>
+            </div>
+          </div>}
+
+          {features4 && <div className={`${styles["tab-pane"]} fade show`} id="features-tab-4" >
+            <div className={`row`}>
+              <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
+                <h3>Proven Expertise in SAP Solutions</h3>
+                <p>
+                With over 15 years of experience in SAP consulting, we bring deep expertise to every project. Our track record includes successful SAP S/4 HANA implementations, cloud solutions, and migration services. We have served a wide range of industries and countries, consistently delivering high-value outcomes and strategic benefits to our clients.
+                </p>
+                {/* <p className={`fst-italic`}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p> */}
+                <ul>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Years of Experience: 15+ years in SAP consulting and end-to-end implementation.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Industries Served: Manufacturing, Retail, Consumer Products, Industrial Products, and others.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Countries Served: Extensive international experience with global market implementations.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Client Success Stories: Proven results in achieving significant improvements and ROI.</span></li>
+                </ul>
+              </div>
+              <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
+                <img src="./img/working-4.jpg" alt="" className={`img-fluid`}/>
+              </div>
+            </div>
+          </div>}
   </div>
 
 </div>
