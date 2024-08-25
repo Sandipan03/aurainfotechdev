@@ -1,5 +1,5 @@
 /**@format */
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect,useRef} from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,6 +12,20 @@ function first({className}) {
   const [features3, setfeatures3] = useState(false)
   const [features4, setfeatures4] = useState(false)
   const [headClicked, setheadClicked] = useState('home')
+  const [faq1, setfaq1] = useState(true)
+  const [faq2, setfaq2] = useState(false)
+  const [faq3, setfaq3] = useState(false)
+  function changeCss () {
+    var navElement = document.querySelector("header");
+    this.scrollY >500 ? navElement.style.boxShadow ="inset 0 0 0 300px rgba(0,0,0,0.5)" : navElement.style.boxShadow ="inset 0 0 0 300px rgba(0,0,0,0)";
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", changeCss , false);
+  
+    
+  }, [])
+  
+ 
   useEffect(() => {
     AOS.init({
       disable: "phone",
@@ -19,6 +33,9 @@ function first({className}) {
       easing: "ease-out-cubic",
     });
   }, []);
+  const carouselRef = useRef(null);
+
+  
   return (
     <div className={className} style={{}}>
         <div className={styles["index-page"]}>
@@ -67,10 +84,10 @@ function first({className}) {
   </header>
   <section id="hero" className={`${styles.hero} ${styles.section} ${styles["dark-background"]}`}>
 
-<div id="hero-carousel" data-bs-interval="5000" className={`container carousel carousel-fade`} data-bs-ride="carousel">
+<div  id="hero-carousel" data-bs-interval="5000" className={`container carousel carousel-fade`} data-bs-ride="carousel">
 
  
-  <div className={`carousel-item active`} >
+  <div className={`carousel-item active `} >
     <div className={styles["carousel-container"]}>
       <h2 className={`animate__animated animate__fadeInDown`}>Unlock Agility with SAP Cloud Solutions</h2>
       <p className={`animate__animated animate__fadeInUp`}>Empower your enterprise to adopt new business models, enhance productivity, and create long-term value with SAP's cutting-edge cloud solutions.</p>
@@ -815,12 +832,12 @@ function first({className}) {
             <div className={styles["custom-accordion"]} id="accordion-faq">
               <div className={styles["accordion-item"]}>
                 <h2 className={`mb-0`}>
-                  <button className={`btn ${styles["btn-link"]}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
+                  <button className={`btn ${styles["btn-link"]} ${!faq1?'collapsed':''}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1" onClick={()=>{setfaq1(!faq1)}}>
                     How to download and register?
                   </button>
                 </h2>
 
-                <div id="collapse-faq-1" className={`collapse show`} aria-labelledby="headingOne" data-parent="#accordion-faq">
+                <div id="collapse-faq-1" className={`collapse ${faq1?'show':''}`} aria-labelledby="headingOne" data-parent="#accordion-faq">
                   <div className={styles["accordion-body"]}>
                     Far far away, behind the word mountains, far from the countries
                     Vokalia and Consonantia, there live the blind texts. Separated
@@ -833,11 +850,11 @@ function first({className}) {
 
               <div className={[styles["accordion-item"]]}>
                 <h2 className={`mb-0`}>
-                  <button className={`btn ${styles["btn-link"]} collapsed`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2">
+                  <button className={`btn ${styles["btn-link"]} ${!faq2?'collapsed':''}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2" onClick={()=>{setfaq2(!faq2)}}>
                 How to create your paypal account?
               </button>
             </h2>
-            <div id=" collapse-faq-2" className={`collapse`} aria-labelledby="headingTwo" data-parent="#accordion-faq">
+            <div id=" collapse-faq-2" className={`collapse ${faq2?'show':''}`} aria-labelledby="headingTwo" data-parent="#accordion-faq">
                     <div className={styles["accordion-body"]}>
                       A small river named Duden flows by their place and supplies it
                       with the necessary regelialia. It is a paradisematic country, in
@@ -849,12 +866,12 @@ function first({className}) {
 
             <div className={styles["accordion-item"]}>
               <h2 className={`mb-0`}>
-                <button className={`btn ${styles["btn-link"]} collapsed`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-3">
+                <button className={`btn ${styles["btn-link"]} ${!faq3?'collapsed':''}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-3" onClick={()=>{setfaq3(!faq3)}}>
                   How to link your paypal and bank account?
                 </button>
               </h2>
 
-              <div id="collapse-faq-3" className={`collapse`} aria-labelledby="headingThree" data-parent="#accordion-faq">
+              <div id="collapse-faq-3" className={`collapse ${faq3?'show':''}`} aria-labelledby="headingThree" data-parent="#accordion-faq">
                 <div className={styles["accordion-body"]}>
                   When she reached the first hills of the Italic Mountains, she
                   had a last view back on the skyline of her hometown
