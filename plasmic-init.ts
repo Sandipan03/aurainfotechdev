@@ -1,5 +1,6 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 import First from "./components/First"
+import Second from "./components/Second"
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
@@ -24,5 +25,9 @@ export const PLASMIC = initPlasmicLoader({
 
 PLASMIC.registerComponent(First,{
   name:"First",
+  props: {}
+});
+PLASMIC.registerComponent(Second,{
+  name:"Second",
   props: {}
 });
