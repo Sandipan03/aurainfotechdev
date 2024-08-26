@@ -90,7 +90,7 @@ function First({className}) {
   <div className={`carousel-item active `} >
     <div className={styles["carousel-container"]}>
       <h2 className={`animate__animated animate__fadeInDown`}>Unlock Agility with SAP Cloud Solutions</h2>
-      <p className={`animate__animated animate__fadeInUp`}>Empower your enterprise to adopt new business models, enhance productivity, and create long-term value with SAP's cutting-edge cloud solutions.</p>
+      <p className={`animate__animated animate__fadeInUp`}>Empower your enterprise to adopt new business models, enhance productivity, and create long-term value with SAP&#39;s cutting-edge cloud solutions.</p>
       <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
     </div>
   </div>
@@ -498,7 +498,7 @@ function First({className}) {
 
 <div className={`container ${styles["section-title"]}`} data-aos="fade-up">
   <h2>Portfolio</h2>
-  <p>What we've done</p>
+  <p>What we&#39;ve done</p>
 </div>
 <div className={`container`}>
 
