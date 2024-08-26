@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './styles.module.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-function first({className}) {
+function First({className}) {
   const [features1, setfeatures1] = useState(true)
   const [features2, setfeatures2] = useState(false)
   const [features3, setfeatures3] = useState(false)
@@ -1176,4 +1176,4 @@ function first({className}) {
   )
 }
 
-export default first
+export default First
