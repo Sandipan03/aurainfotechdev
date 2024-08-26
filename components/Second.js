@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './styles.module.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Link from 'next/link'
 
 function Second({className}) {
     const [headClicked, setheadClicked] = useState('contact')
@@ -29,11 +30,11 @@ function Second({className}) {
 
       <nav id="navmenu" className={styles.navmenu}>
         <ul>
-          <li><a href="/" className={headClicked==='home'?styles.active:''} onClick={()=>{setheadClicked('home')}}>Home</a></li>
-          <li><a href="/#about" className={headClicked==='about'?styles.active:''} onClick={()=>{setheadClicked('about')}}>About</a></li>
-          <li><a href="/#services" className={headClicked==='services'?styles.active:''} onClick={()=>{setheadClicked('services')}}>Services</a></li>
-          <li><a href="/#portfolio" className={headClicked==='portfolio'?styles.active:''} onClick={()=>{setheadClicked('portfolio')}}>Portfolio</a></li>
-          <li><a href="/#team" className={headClicked==='team'?styles.active:''} onClick={()=>{setheadClicked('team')}}>Team</a></li>
+          <li><Link href="/" className={headClicked==='home'?styles.active:''} onClick={()=>{setheadClicked('home')}}>Home</Link></li>
+          <li><Link href="/#about" className={headClicked==='about'?styles.active:''} onClick={()=>{setheadClicked('about')}}>About</Link></li>
+          <li><Link href="/#services" className={headClicked==='services'?styles.active:''} onClick={()=>{setheadClicked('services')}}>Services</Link></li>
+          <li><Link href="/#portfolio" className={headClicked==='portfolio'?styles.active:''} onClick={()=>{setheadClicked('portfolio')}}>Portfolio</Link></li>
+          <li><Link href="/#team" className={headClicked==='team'?styles.active:''} onClick={()=>{setheadClicked('team')}}>Team</Link></li>
           {/* <li><a href="blog.html" className={headClicked==='blog'?styles.active:''} onClick={()=>{setheadClicked('blog')}}>Blog</a></li> */}
           {/* <li className={styles.dropdown}><a href="#"><span>Dropdown</span> <i className={`bi bi-chevron-down toggle-dropdown`}></i></a>
             <ul>

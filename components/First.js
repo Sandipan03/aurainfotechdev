@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './styles.module.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Link from 'next/link'
 
 function First({className}) {
   const [features1, setfeatures1] = useState(true)
@@ -75,7 +76,7 @@ function First({className}) {
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li> */}
-          <li><a href="/contact" className={headClicked==='contact'?styles.active:''} onClick={()=>{setheadClicked('contact')}}>Contact</a></li>
+          <li><Link href="/contact" className={headClicked==='contact'?styles.active:''} onClick={()=>{setheadClicked('contact')}}>Contact</Link></li>
         </ul>
         <i className={`${styles["mobile-nav-toggle"]} d-xl-none bi bi-list`}></i>
       </nav>
@@ -318,7 +319,7 @@ function First({className}) {
             </p>
           </div>
           <div className={`col-xl-3 ${styles["cta-btn-container"]} text-center`}>
-            <a className={`${styles["cta-btn"]} align-middle`} href="/contact">Call To Action</a>
+            <Link className={`${styles["cta-btn"]} align-middle`} href="/contact">Call To Action</Link>
           </div>
         </div>
 
