@@ -18,7 +18,8 @@ function First({className}) {
   const [faq3, setfaq3] = useState(false)
   function changeCss () {
     var navElement = document.querySelector("header");
-    this.scrollY >500 ? navElement.style.boxShadow ="inset 0 0 0 300px rgba(0,0,0,0.5)" : navElement.style.boxShadow ="inset 0 0 0 300px rgba(0,0,0,0)";
+    // this.scrollY >500 ? navElement.style.boxShadow ="inset 0 0 0 300px rgba(0,0,0,0.5)" : navElement.style.boxShadow ="inset 0 0 0 300px rgba(0,0,0,0)";
+    this.scrollY >500 ? navElement.style.opacity =0.94 : navElement.style.opacity =1;
   }
   useEffect(() => {
     window.addEventListener("scroll", changeCss , false);
@@ -45,38 +46,33 @@ function First({className}) {
     <header id="header" className={`${styles.header} d-flex align-items-center fixed-top`}>
     <div className={`container-fluid container-xl position-relative d-flex align-items-center justify-content-between`}>
 
-      <a href="index.html" className={`${styles.logo} d-flex align-items-center`}>
+      <Link href="/" className={`${styles.logo} d-flex align-items-center`}>
          {/* Uncomment the line below if you also wish to use an image logo  */}
          <img src="./img/auraLogo.png" alt=""/>
         <h1 className={`sitename`}>Aura InfoTech</h1>
-      </a>
+      </Link>
 
       <nav id="navmenu" className={styles.navmenu}>
         <ul>
-          <li><a href="#hero" className={headClicked==='home'?styles.active:''} onClick={()=>{setheadClicked('home')}}>Home</a></li>
-          <li><a href="#about" className={headClicked==='about'?styles.active:''} onClick={()=>{setheadClicked('about')}}>About</a></li>
-          <li><a href="#services" className={headClicked==='services'?styles.active:''} onClick={()=>{setheadClicked('services')}}>Services</a></li>
-          <li><a href="#portfolio" className={headClicked==='portfolio'?styles.active:''} onClick={()=>{setheadClicked('portfolio')}}>Portfolio</a></li>
-          <li><a href="#team" className={headClicked==='team'?styles.active:''} onClick={()=>{setheadClicked('team')}}>Team</a></li>
+          <li><a href="#hero" className={headClicked==='home'?styles.active:''} onClick={()=>{setheadClicked('home')}}  >Home</a></li>
+          <li><a href="#about" className={headClicked==='about'?styles.active:''} onClick={()=>{setheadClicked('about')}} >About Us</a></li>
+          {/* <li><a href="#services" className={headClicked==='services'?styles.active:''} onClick={()=>{setheadClicked('services')}}>Services</a></li> */}
+          {/* <li><a href="#portfolio" className={headClicked==='portfolio'?styles.active:''} onClick={()=>{setheadClicked('portfolio')}}>Portfolio</a></li> */}
+          {/* <li><a href="#team" className={headClicked==='team'?styles.active:''} onClick={()=>{setheadClicked('team')}}>Team</a></li> */}
           {/* <li><a href="blog.html" className={headClicked==='blog'?styles.active:''} onClick={()=>{setheadClicked('blog')}}>Blog</a></li> */}
-          {/* <li className={styles.dropdown}><a href="#"><span>Dropdown</span> <i className={`bi bi-chevron-down toggle-dropdown`}></i></a>
+          <li className={styles.dropdown}><a href="#" ><span >Services</span> <i className={`bi bi-chevron-down toggle-dropdown`} ></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li className={styles.dropdown}><a href="#"><span>Deep Dropdown</span> <i className={`bi bi-chevron-down toggle-dropdown`}></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#">SAP Solutions</a></li>
+              <li><a href="#">SAP Services</a></li>
+              <li><a href="#">Cloud</a></li>
+              <li><a href="#">Enterprise Analytics with Tableau</a></li>
+              <li><a href="#">Power BI</a></li>
+              <li><a href="#">Technology Services</a></li>
+              <li><a href="#">Business Processing</a></li>
+              <li><a href="#">Consulting</a></li>
             </ul>
-          </li> */}
-          <li><Link href="/contact" className={headClicked==='contact'?styles.active:''} onClick={()=>{setheadClicked('contact')}}>Contact</Link></li>
+          </li>
+          <li><Link href="/contact" className={headClicked==='contact'?styles.active:''} onClick={()=>{setheadClicked('contact')}} >Contact Us</Link></li>
         </ul>
         <i className={`${styles["mobile-nav-toggle"]} d-xl-none bi bi-list`}></i>
       </nav>
@@ -494,7 +490,7 @@ function First({className}) {
 </div>
 
 </section>
-<section id="portfolio" className={`${styles["portfolio"]} ${styles.section}`}>
+{/* <section id="portfolio" className={`${styles["portfolio"]} ${styles.section}`}>
 
 
 <div className={`container ${styles["section-title"]}`} data-aos="fade-up">
@@ -609,7 +605,7 @@ function First({className}) {
 
 </div>
 
-</section>
+</section> */}
 <section id="testimonials" className={`${styles.testimonials} ${styles.section}`}>
       <div className={`container ${styles["section-title"]}`} data-aos="fade-up">
         <h2>Testimonials</h2>
