@@ -169,141 +169,6 @@ function First({className}) {
 </div>
 
 </section>
-<section id="features" className={`${styles.features} ${styles.section}`}>
-
-<div className={`container`}>
-
-  <ul className={`nav ${styles["nav-tabs"]} row  d-flex`} data-aos="fade-up" data-aos-delay="100">
-    <li className={`nav-item col-3`} onClick={()=>{setfeatures2(false);setfeatures3(false);setfeatures4(false);setfeatures1(true);}}>
-      <a className={`${styles["nav-link"]} ${features1?styles.active:''} show`} data-bs-toggle="tab" data-bs-target="#features-tab-1">
-        <i className={`bi bi-binoculars`}></i>
-        <h4 className={`d-none d-lg-block`}>SAP S/4 HANA Cloud Integration</h4>
-      </a>
-    </li>
-    <li className={`nav-item col-3`} onClick={()=>{setfeatures1(false);setfeatures3(false);setfeatures4(false);setfeatures2(true);}}>
-      <a className={`${styles["nav-link"]} ${features2?styles.active:''}`} data-bs-toggle="tab" data-bs-target="#features-tab-2">
-        <i className={`bi bi-box-seam`}></i>
-        <h4 className={`d-none d-lg-block`}> Industry-Specific Best Practices
-        </h4>
-      </a>
-    </li>
-    <li className={`nav-item col-3`} onClick={()=>{setfeatures1(false);setfeatures2(false);setfeatures4(false);setfeatures3(true);}}>
-      <a className={`${styles["nav-link"]} ${features3?styles.active:''}`} data-bs-toggle="tab" data-bs-target="#features-tab-3">
-        <i className={`bi bi-brightness-high`}></i>
-        <h4 className={`d-none d-lg-block`}> Cutting-Edge Technology</h4>
-      </a>
-    </li>
-    <li className={`nav-item col-3`} onClick={()=>{setfeatures1(false);setfeatures3(false);setfeatures2(false);setfeatures4(true);}}>
-      <a className={`${styles["nav-link"]} ${features4?styles.active:''}`} data-bs-toggle="tab" data-bs-target="#features-tab-4">
-        <i className={`bi bi-command`}></i>
-        <h4 className={`d-none d-lg-block`}>Proven Expertise</h4>
-      </a>
-    </li>
-  </ul>
-
-  <div className={styles["tab-content"]} data-aos="fade-up" data-aos-delay="200">
-
- { features1 &&  <div className={`${styles["tab-pane"]} fade active show`} id="features-tab-1" >
-      <div className={`row`}>
-        <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
-          <h3>Transform Your Business with Expert SAP Consulting</h3>
-          <p className={`fst-italic`}>
-          Unlock the full potential of your enterprise with SAP S/4 HANA Cloud. Our solutions provide seamless integration that delivers real-time insights and boosts operational efficiency. Designed to adapt to evolving business needs, our ERP system supports strategic growth, enabling companies to manage business changes swiftly and leverage advanced analytics for smarter decision-making.
-
-          </p>
-          <ul>
-            <li><i className={`bi bi-check2-all`}></i>
-              <span>Real-Time Insights: Gain immediate visibility into business operations.</span>
-            </li>
-            <li><i className={`bi bi-check2-all`}></i> <span>Efficient Integration: Align effortlessly with existing systems.</span></li>
-            <li><i className={`bi bi-check2-all`}></i> <span>Scalable Solutions: Support future growth with adaptable technology.</span></li>
-          </ul>
-          <p>
-          Choosing the right partner for your SAP consulting needs is crucial for achieving your business goals. At Aura InfoTech, we stand out with our commitment to excellence and tailored solutions designed to drive growth and efficiency. Here’s why partnering with us will benefit your organization.
-          </p>
-        </div>
-        <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
-          <img src="./img/working-1.jpg" alt="" className={`img-fluid`}/>
-        </div>
-      </div>
-    </div>}
-    {features2 && <div className={`${styles["tab-pane"]} fade show`} id="features-tab-2" >
-            <div className={`row`}>
-              <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
-                <h3>Industry-Specific Best Practices</h3>
-                <p>
-                Our industry-specific solutions are pre-configured with best practices tailored to your sector, ensuring optimal performance and efficiency. Whether your focus is on manufacturing, retail, consumer products, industrial products, or another industry, we provide solutions designed to meet your unique needs and support your strategic growth objectives.
-
-                </p>
-                {/* <p className={`fst-italic`}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p> */}
-                <ul>
-                  <li><i className={`bi bi-check2-all`}></i> <span>Pre-Configured Solutions: Best practices for various industries.</span></li>
-                  <li><i className={`bi bi-check2-all`}></i> <span>Operational Efficiency: Optimized performance for different sectors.</span></li>
-                  <li><i className={`bi bi-check2-all`}></i> <span>Custom Fit: Solutions tailored to your industry’s needs.</span></li>
-                  {/* <li><i className={`bi bi-check2-all`}></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li> */}
-                </ul>
-              </div>
-              <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
-                <img src="./img/working-2.jpg" alt="" className={`img-fluid`}/>
-              </div>
-            </div>
-          </div>}
-
-         {features3 && <div className={`${styles["tab-pane"]} fade show`} id="features-tab-3" >
-            <div className={`row`}>
-              <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
-                <h3>Advanced Technology</h3>
-                <p>
-                Stay competitive with our advanced technology solutions, including AI, machine learning, and data analytics. These tools are integrated into your business strategy to drive innovation and enhance efficiency. Embrace cutting-edge technology that provides predictive insights and automates processes, keeping your business at the forefront of industry advancements.
-
-                </p>
-                <ul>
-                  <li><i className={`bi bi-check2-all`}></i> <span>AI Integration: Enhance decision-making with artificial intelligence.</span></li>
-                  <li><i className={`bi bi-check2-all`}></i> <span>Machine Learning: Automate processes and improve accuracy.</span></li>
-                  <li><i className={`bi bi-check2-all`}></i> <span>Data Analytics: Gain predictive insights and optimize strategies.</span></li>
-                </ul>
-                {/* <p className={`fst-italic`}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p> */}
-              </div>
-              <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
-                <img src="./img/working-3.jpg" alt="" className={`img-fluid`}/>
-              </div>
-            </div>
-          </div>}
-
-          {features4 && <div className={`${styles["tab-pane"]} fade show`} id="features-tab-4" >
-            <div className={`row`}>
-              <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
-                <h3>Proven Expertise in SAP Solutions</h3>
-                <p>
-                With over 15 years of experience in SAP consulting, we bring deep expertise to every project. Our track record includes successful SAP S/4 HANA implementations, cloud solutions, and migration services. We have served a wide range of industries and countries, consistently delivering high-value outcomes and strategic benefits to our clients.
-                </p>
-                {/* <p className={`fst-italic`}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p> */}
-                <ul>
-                  <li><i className={`bi bi-check2-all`}></i> <span>Years of Experience: 15+ years in SAP consulting and end-to-end implementation.</span></li>
-                  <li><i className={`bi bi-check2-all`}></i> <span>Industries Served: Manufacturing, Retail, Consumer Products, Industrial Products, and others.</span></li>
-                  <li><i className={`bi bi-check2-all`}></i> <span>Countries Served: Extensive international experience with global market implementations.</span></li>
-                  <li><i className={`bi bi-check2-all`}></i> <span>Client Success Stories: Proven results in achieving significant improvements and ROI.</span></li>
-                </ul>
-              </div>
-              <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
-                <img src="./img/working-4.jpg" alt="" className={`img-fluid`}/>
-              </div>
-            </div>
-          </div>}
-  </div>
-
-</div>
-
-</section>
 <section id="call-to-action" className={`${styles["call-to-action"]} ${styles["section"]} ${styles["dark-background"]}`}>
 
       <div className={`container`}>
@@ -322,7 +187,7 @@ function First({className}) {
       </div>
 
     </section>
-  <section id="services" className={`${styles.services} ${styles.section}`}>
+    <section id="services" className={`${styles.services} ${styles.section}`}>
 
 
     <div className={`container ${styles["section-title"]}`} data-aos="fade-up">
@@ -490,6 +355,147 @@ function First({className}) {
 </div>
 
 </section>
+<section id="features" className={`${styles.features} ${styles.section}`}>
+<div className={`${styles.sectionTitle} container`} data-aos="fade-up">
+  <h2>Why Choose Us?</h2>
+  <p>Why Partner with Us for SAP Consulting?</p>
+</div>
+
+<div className={`container`}>
+
+  <ul className={`nav ${styles["nav-tabs"]} row  d-flex`} data-aos="fade-up" data-aos-delay="100">
+    <li className={`nav-item col-3`} onClick={()=>{setfeatures2(false);setfeatures3(false);setfeatures4(false);setfeatures1(true);}}>
+      <a className={`${styles["nav-link"]} ${features1?styles.active:''} show`} data-bs-toggle="tab" data-bs-target="#features-tab-1">
+        <i className={`bi bi-cloud-download`}></i>
+        <h4 className={`d-none d-lg-block`}>SAP S/4 HANA Cloud Integration</h4>
+      </a>
+    </li>
+    <li className={`nav-item col-3`} onClick={()=>{setfeatures1(false);setfeatures3(false);setfeatures4(false);setfeatures2(true);}}>
+      <a className={`${styles["nav-link"]} ${features2?styles.active:''}`} data-bs-toggle="tab" data-bs-target="#features-tab-2">
+        <i className={`bi bi-award`}></i>
+        <h4 className={`d-none d-lg-block`}> Industry-Specific Best Practices
+        </h4>
+      </a>
+    </li>
+    <li className={`nav-item col-3`} onClick={()=>{setfeatures1(false);setfeatures2(false);setfeatures4(false);setfeatures3(true);}}>
+      <a className={`${styles["nav-link"]} ${features3?styles.active:''}`} data-bs-toggle="tab" data-bs-target="#features-tab-3">
+        <i className={`bi bi-robot`}></i>
+        <h4 className={`d-none d-lg-block`}> Cutting-Edge Technology</h4>
+      </a>
+    </li>
+    <li className={`nav-item col-3`} onClick={()=>{setfeatures1(false);setfeatures3(false);setfeatures2(false);setfeatures4(true);}}>
+      <a className={`${styles["nav-link"]} ${features4?styles.active:''}`} data-bs-toggle="tab" data-bs-target="#features-tab-4">
+        <i className={`bi bi-patch-check`}></i>
+        <h4 className={`d-none d-lg-block`}>Proven Expertise</h4>
+      </a>
+    </li>
+  </ul>
+
+  <div className={styles["tab-content"]} data-aos="fade-up" data-aos-delay="200">
+
+ { features1 &&  <div className={`${styles["tab-pane"]} fade active show`} id="features-tab-1" >
+      <div className={`row`}>
+        <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
+          <h3>Transform Your Business with Expert SAP Consulting</h3>
+          <p className={`fst-italic`}>
+          Unlock the full potential of your enterprise with SAP S/4 HANA Cloud. Our solutions provide seamless integration that delivers real-time insights and boosts operational efficiency. Designed to adapt to evolving business needs, our ERP system supports strategic growth, enabling companies to manage business changes swiftly and leverage advanced analytics for smarter decision-making.
+
+          </p>
+          <ul>
+            <li><i className={`bi bi-check2-all`}></i>
+              <span>Real-Time Insights: Gain immediate visibility into business operations.</span>
+            </li>
+            <li><i className={`bi bi-check2-all`}></i> <span>Efficient Integration: Align effortlessly with existing systems.</span></li>
+            <li><i className={`bi bi-check2-all`}></i> <span>Scalable Solutions: Support future growth with adaptable technology.</span></li>
+          </ul>
+          <p>
+          Choosing the right partner for your SAP consulting needs is crucial for achieving your business goals. At Aura InfoTech, we stand out with our commitment to excellence and tailored solutions designed to drive growth and efficiency. Here’s why partnering with us will benefit your organization.
+          </p>
+        </div>
+        <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
+          <img src="./img/working-1.jpg" alt="" className={`img-fluid`}/>
+        </div>
+      </div>
+    </div>}
+    {features2 && <div className={`${styles["tab-pane"]} fade show`} id="features-tab-2" >
+            <div className={`row`}>
+              <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
+                <h3>Industry-Specific Best Practices</h3>
+                <p>
+                Our industry-specific solutions are pre-configured with best practices tailored to your sector, ensuring optimal performance and efficiency. Whether your focus is on manufacturing, retail, consumer products, industrial products, or another industry, we provide solutions designed to meet your unique needs and support your strategic growth objectives.
+
+                </p>
+                {/* <p className={`fst-italic`}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p> */}
+                <ul>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Pre-Configured Solutions: Best practices for various industries.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Operational Efficiency: Optimized performance for different sectors.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Custom Fit: Solutions tailored to your industry’s needs.</span></li>
+                  {/* <li><i className={`bi bi-check2-all`}></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li> */}
+                </ul>
+              </div>
+              <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
+                <img src="./img/working-2.jpg" alt="" className={`img-fluid`}/>
+              </div>
+            </div>
+          </div>}
+
+         {features3 && <div className={`${styles["tab-pane"]} fade show`} id="features-tab-3" >
+            <div className={`row`}>
+              <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
+                <h3>Advanced Technology</h3>
+                <p>
+                Stay competitive with our advanced technology solutions, including AI, machine learning, and data analytics. These tools are integrated into your business strategy to drive innovation and enhance efficiency. Embrace cutting-edge technology that provides predictive insights and automates processes, keeping your business at the forefront of industry advancements.
+
+                </p>
+                <ul>
+                  <li><i className={`bi bi-check2-all`}></i> <span>AI Integration: Enhance decision-making with artificial intelligence.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Machine Learning: Automate processes and improve accuracy.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Data Analytics: Gain predictive insights and optimize strategies.</span></li>
+                </ul>
+                {/* <p className={`fst-italic`}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p> */}
+              </div>
+              <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
+                <img src="./img/working-3.jpg" alt="" className={`img-fluid`}/>
+              </div>
+            </div>
+          </div>}
+
+          {features4 && <div className={`${styles["tab-pane"]} fade show`} id="features-tab-4" >
+            <div className={`row`}>
+              <div className={`col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0`}>
+                <h3>Proven Expertise in SAP Solutions</h3>
+                <p>
+                With over 15 years of experience in SAP consulting, we bring deep expertise to every project. Our track record includes successful SAP S/4 HANA implementations, cloud solutions, and migration services. We have served a wide range of industries and countries, consistently delivering high-value outcomes and strategic benefits to our clients.
+                </p>
+                {/* <p className={`fst-italic`}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p> */}
+                <ul>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Years of Experience: 15+ years in SAP consulting and end-to-end implementation.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Industries Served: Manufacturing, Retail, Consumer Products, Industrial Products, and others.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Countries Served: Extensive international experience with global market implementations.</span></li>
+                  <li><i className={`bi bi-check2-all`}></i> <span>Client Success Stories: Proven results in achieving significant improvements and ROI.</span></li>
+                </ul>
+              </div>
+              <div className={`col-lg-6 order-1 order-lg-2 text-center`}>
+                <img src="./img/working-4.jpg" alt="" className={`img-fluid`}/>
+              </div>
+            </div>
+          </div>}
+  </div>
+
+</div>
+
+</section>
+
+  
 {/* <section id="portfolio" className={`${styles["portfolio"]} ${styles.section}`}>
 
 
@@ -645,8 +651,8 @@ function First({className}) {
             <div className={styles["swiper-slide"]}>
               <div className={styles["testimonial-item"]}>
                 <img src="./img/testimonials/testimonials-1.jpg" className={styles["testimonial-img"]} alt=""/>
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Pricewaterhouse Coopers</h3>
+                <h4>Senior Manager</h4>
                 <div className={styles.stars}>
                   <i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i>
                 </div>
@@ -661,8 +667,8 @@ function First({className}) {
             <div className={styles["swiper-slide"]}>
               <div className={styles["testimonial-item"]}>
                 <img src="./img/testimonials/testimonials-2.jpg" className={styles["testimonial-img"]} alt=""/>
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <h3>Cognizant Technology Solutions</h3>
+                <h4>Functional Architect</h4>
                 <div className={styles.stars}>
                   <i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i>
                 </div>
@@ -677,8 +683,8 @@ function First({className}) {
             <div className={styles["swiper-slide"]}>
               <div className={styles["testimonial-item"]}>
                 <img src="./img/testimonials/testimonials-3.jpg" className={styles["testimonial-img"]} alt=""/>
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <h3>Bristlecone India Ltd.</h3>
+                <h4>Lead Consultant</h4>
                 <div className={styles.stars}>
                   <i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i>
                 </div>
@@ -693,8 +699,8 @@ function First({className}) {
             <div className={styles["swiper-slide"]}>
               <div className={styles["testimonial-item"]}>
                 <img src="./img/testimonials/testimonials-4.jpg" className={styles["testimonial-img"]} alt=""/>
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <h3>ASM Technologies Pvt. Ltd</h3>
+                <h4>Consultant</h4>
                 <div className={styles.stars}>
                   <i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i><i className={`bi bi-star-fill`}></i>
                 </div>
@@ -897,7 +903,7 @@ function First({className}) {
 
         <div className={`row gy-4`}>
 
-          <div className={`col-lg-3 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="100">
+          <div className={`col-lg-4 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="100">
             <div className={styles["team-member"]}>
               <div className={styles["member-img"]}>
                 <img src="./img/team/team-1.jpg" className={`img-fluid`} alt=""/>
@@ -909,13 +915,13 @@ function First({className}) {
                 </div>
               </div>
               <div className={styles["member-info"]}>
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Lakshmanan Cida Rajan</h4>
+                <span>President & CEO</span>
               </div>
             </div>
           </div>
 
-          <div className={`col-lg-3 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="200">
+          <div className={`col-lg-4 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="200">
             <div className={styles["team-member"]}>
               <div className={styles["member-img"]}>
                 <img src="./img/team/team-2.jpg" className={`img-fluid`} alt=""/>
@@ -927,13 +933,13 @@ function First({className}) {
                 </div>
               </div>
               <div className={styles["member-info"]}>
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Poongunran Subramanian</h4>
+                <span>MD & COO</span>
               </div>
             </div>
           </div>
 
-          <div className={`col-lg-3 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="300">
+          <div className={`col-lg-4 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="300">
             <div className={styles["team-member"]}>
               <div className={styles["member-img"]}>
                 <img src="./img/team/team-3.jpg" className={`img-fluid`} alt=""/>
@@ -945,29 +951,13 @@ function First({className}) {
                 </div>
               </div>
               <div className={styles["member-info"]}>
-                <h4>William Anderson</h4>
+                <h4>Sanjay Poongunran</h4>
                 <span>CTO</span>
               </div>
             </div>
           </div>
 
-          <div className={`col-lg-3 col-md-6 d-flex align-items-stretch`} data-aos="fade-up" data-aos-delay="400">
-            <div className={styles["team-member"]}>
-              <div className={styles["member-img"]}>
-                <img src="./img/team/team-4.jpg" className={`img-fluid`} alt=""/>
-                <div className={styles.social}>
-                  {/* <a href=""><i className={`bi bi-twitter-x`}></i></a>
-                  <a href=""><i className={`bi bi-facebook`}></i></a>
-                  <a href=""><i className={`bi bi-instagram`}></i></a> */}
-                  <a href=""><i className={`bi bi-linkedin`}></i></a>
-                </div>
-              </div>
-              <div className={styles["member-info"]}>
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
 
@@ -1069,11 +1059,93 @@ function First({className}) {
       </div>
 
     </section> */}
+    <section id="contact" className={`${styles.contact} ${styles.section}`} style={{marginTop:"100px"}}>
+
+      
+<div className={`container ${styles["section-title"]}`} data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Ready to Transform Your Business with SAP?</p>
+</div>
+
+<div className={`container`} data-aos="fade" data-aos-delay="100">
+
+  <div className={`row gy-4`}>
+
+    <div className={`col-lg-4`}>
+      <div className={styles["info-item"]}>Ready for Digital Transformation of Your Business with an ERP
+solution.
+</div>
+      {/* <div className={`${styles["info-item"]} d-flex`} data-aos="fade-up" data-aos-delay="200">
+        <i className={`bi bi-geo-alt flex-shrink-0`}></i>
+        <div>
+          <h3>Address</h3>
+          <p>A108 Adam Street, New York, NY 535022</p>
+        </div>
+      </div> */}
+
+      <div className={`${styles["info-item"]} d-flex`} data-aos="fade-up" data-aos-delay="300">
+        <i className={`bi bi-telephone flex-shrink-0`}></i>
+        <div>
+          <h3>Call Us</h3>
+          <p>+91 9952244816</p>
+        </div>
+      </div>
+
+      <div className={`${styles["info-item"]} d-flex`} data-aos="fade-up" data-aos-delay="400">
+        <i className={`bi bi-envelope flex-shrink-0`}></i>
+        <div>
+          <h3>Email Us</h3>
+          <p>sales@aurainfotech.sg</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div className={`col-lg-8`}>
+      <form action="forms/contact.php" method="post" className={styles["php-email-form"]} data-aos="fade-up" data-aos-delay="200">
+        <div className={`row gy-4`}>
+
+          <div className={`col-md-6`}>
+            <input type="text" name="name" className={`form-control`} placeholder="Your Name" required=""/>
+          </div>
+
+          <div className={`col-md-6 `}>
+            <input type="email" className={`form-control`} name="email" placeholder="Your Email" required=""/>
+          </div>
+
+          <div className={`col-md-12`}>
+            <input type="text" className={`form-control`} name="subject" placeholder="Subject" required=""/>
+          </div>
+
+          <div className={`col-md-12`}>
+            <textarea className={`form-control`} name="message" rows="6" placeholder="Message" required=""></textarea>
+          </div>
+
+          <div className={`col-md-12 text-center`}>
+            <div className={styles.loading}>Loading</div>
+            <div className={styles["error-message"]}></div>
+            <div className={styles["sent-message"]}>Your message has been sent. Thank you!</div>
+
+            <button type="submit">Send Message</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+</section>
     
     </main>
     <footer id="footer" className={`${styles.footer} ${styles["dark-background"]}`}>
     <div className={`container`}>
+      <div className={`d-flex align-items-center mx-auto justify-content-center`} > 
+    <img src="./img/auraLogo.png" alt=""/>
       <h3 className={`sitename`}>Aura InfoTech</h3>
+      </div>
       {/* <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> */}
       <div className={`${styles["social-links"]} d-flex justify-content-center`}>
         <a href=""><i className={`bi bi-twitter-x`}></i></a>

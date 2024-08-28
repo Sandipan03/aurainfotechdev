@@ -55,6 +55,58 @@ function Second({className}) {
 
     </div>
   </header>
+  <section id="hero" className={`${styles.hero} ${styles.section} ${styles["dark-background"]}`}>
+
+<div  id="hero-carousel" data-bs-interval="5000" className={`container carousel carousel-fade`} data-bs-ride="carousel">
+
+ 
+  <div className={`carousel-item active `} >
+    <div className={styles["carousel-container"]}>
+      <h2 className={`animate__animated animate__fadeInDown`}>Contact Us</h2>
+      <p className={`animate__animated animate__fadeInUp`}>We believe in Creating Value for our Customers by Integrating Technology with Innovation and Agility.
+</p>
+      {/* <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a> */}
+    </div>
+  </div>
+
+  
+  <div className={`carousel-item`}>
+    <div className={styles["carousel-container"]}>
+      <h2 className={`animate__animated animate__fadeInDown`}> Tailored for Growing Enterprises
+      </h2>
+      <p className={`animate__animated animate__fadeInUp`}>Ideal for businesses with strategic growth plans, S/4 HANA Cloud Public Edition supports critical functions like finance, sales, manufacturing, and more.</p>
+      <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
+    </div>
+  </div>
+
+  
+  <div className={`carousel-item`}>
+    <div className={styles["carousel-container"]}>
+      <h2 className={`animate__animated animate__fadeInDown`}> Industry-Leading Best Practices</h2>
+      <p className={`animate__animated animate__fadeInUp`}>Benefit from pre-configured best practices and industry-specific scenarios that optimize your operations and fuel your growth journey.</p>
+      <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
+    </div>
+  </div>
+  <div className={`carousel-item`}>
+    <div className={styles["carousel-container"]}>
+      <h2 className={`animate__animated animate__fadeInDown`}>  Future-Proof Your Business</h2>
+      <p className={`animate__animated animate__fadeInUp`}>With SAP S/4HANA Cloud Public Edition, scale your business confidently and explore limitless possibilities with seamless integrations and continuous innovation.</p>
+      <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
+    </div>
+  </div>
+
+  <a className={styles["carousel-control-prev"]} href="#hero-carousel" role="button" data-bs-slide="prev">
+    <span className={`${styles["carousel-control-prev-icon"]} bi bi-chevron-left`} aria-hidden="true"></span>
+  </a>
+
+  <a className={styles["carousel-control-next"]} href="#hero-carousel" role="button" data-bs-slide="next">
+    <span className={`${styles["carousel-control-next-icon"]} bi bi-chevron-right`} aria-hidden="true"></span>
+  </a>
+
+</div>
+
+
+</section>
   <section id="contact" className={`${styles.contact} ${styles.section}`} style={{marginTop:"100px"}}>
 
       
@@ -68,6 +120,9 @@ function Second({className}) {
   <div className={`row gy-4`}>
 
     <div className={`col-lg-4`}>
+    <div className={styles["info-item"]}>Ready for Digital Transformation of Your Business with an ERP
+solution.
+</div>
       {/* <div className={`${styles["info-item"]} d-flex`} data-aos="fade-up" data-aos-delay="200">
         <i className={`bi bi-geo-alt flex-shrink-0`}></i>
         <div>
@@ -80,7 +135,7 @@ function Second({className}) {
         <i className={`bi bi-telephone flex-shrink-0`}></i>
         <div>
           <h3>Call Us</h3>
-          <p>+91 97897 20718</p>
+          <p>+91 9952244816</p>
         </div>
       </div>
 
@@ -134,7 +189,10 @@ function Second({className}) {
             </main>
             <footer id="footer" className={`${styles.footer} ${styles["dark-background"]}`}>
     <div className={`container`}>
+    <div className={`d-flex align-items-center mx-auto justify-content-center`} > 
+    <img src="./img/auraLogo.png" alt=""/>
       <h3 className={`sitename`}>Aura InfoTech</h3>
+      </div>
       {/* <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> */}
       <div className={`${styles["social-links"]} d-flex justify-content-center`}>
         <a href=""><i className={`bi bi-twitter-x`}></i></a>
