@@ -760,7 +760,7 @@ function First({className}) {
               </div>
             </div>
 
-            <div className={styles["swiper-slide"]}>
+            {/* <div className={styles["swiper-slide"]}>
               <div className={styles["testimonial-item"]}>
                 <img src="./img/testimonials/testimonials-5.jpg" className={styles["testimonial-img"]} alt=""/>
                 <h3>John Larson</h3>
@@ -774,7 +774,7 @@ function First({className}) {
                   <i className={`bi bi-quote ${styles["quote-icon-right"]}`}></i>
                 </p>
               </div>
-            </div>
+            </div> */}
 
           </div>
           <div className={styles["swiper-pagination"]}></div>
