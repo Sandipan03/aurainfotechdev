@@ -91,35 +91,35 @@ function First({className}) {
   </header>
   <CCarousel controls indicators>
   <CCarouselItem style={{maxHeight:"600px"}}>
-    <CImage className={`d-block w-100`} src="./img/hero/hero1.jpeg" alt="slide 1"  />
+    <CImage className={`d-block w-100`} src="./img/hero/hero1.jpg" alt="slide 1"  />
     <CCarouselCaption className="d-block" style={captionStyle}>
       <h2 style={headingStyle}>Accelerate your Digital Transformation with SAP</h2>
       <p className="d-none d-md-block" style={{maxWidth:"80%", animationDelay:"0.4s", margin:"0 auto 30px auto"}}>Empower your business with cutting-edge SAP solutions, driving agility, innovation, and growth in a rapidly changing landscape.</p>
     </CCarouselCaption>
   </CCarouselItem>
   <CCarouselItem style={{maxHeight:"600px"}}>
-    <CImage className={`d-block w-100`} src="./img/hero/hero2.webp" alt="slide 2" />
+    <CImage className={`d-block w-100`} src="./img/hero/hero2.jpg" alt="slide 2" />
     <CCarouselCaption className="d-block" style={captionStyle}>
       <h2 style={headingStyle}>Simplify your IT Landscape with Award-Winning ERP Solutions</h2>
       <p  className="d-none d-md-block" style={{maxWidth:"80%", animationDelay:"0.4s", margin:"0 auto 30px auto"}}>Streamline operations and reduce complexity with our industry-leading ERP systems, designed for efficiency and scalability.</p>
     </CCarouselCaption>
   </CCarouselItem>
   <CCarouselItem style={{maxHeight:"600px"}}>
-    <CImage className="d-block w-100" src="./img/hero/hero3.jpeg" alt="slide 3" />
+    <CImage className="d-block w-100" src="./img/hero/hero3.jpg" alt="slide 3" />
     <CCarouselCaption className="d-block" style={captionStyle}>
       <h2 style={headingStyle}>Stay Ahead with SAP APO</h2>
       <p className="d-none d-md-block" style={{maxWidth:"80%", animationDelay:"0.4s", margin:"0 auto 30px auto"}}>Optimize your supply chain with SAP APO, ensuring precise planning and maintaining a competitive edge in the market.</p>
     </CCarouselCaption>
   </CCarouselItem>
   <CCarouselItem style={{maxHeight:"600px"}}>
-    <CImage className="d-block w-100" src="./img/hero/hero4.jpg" alt="slide 4" />
+    <CImage className="d-block w-100" src="./img/hero/hero4.png" alt="slide 4" />
     <CCarouselCaption className="d-block" style={captionStyle}>
       <h2 style={headingStyle}>GROW with SAP</h2>
       <p className="d-none d-md-block" style={{maxWidth:"80%", animationDelay:"0.4s", margin:"0 auto 30px auto"}}>Unlock growth potential with SAP solutions tailored for small and medium businesses, enabling faster innovation and expansion.</p>
     </CCarouselCaption>
   </CCarouselItem>
   <CCarouselItem style={{maxHeight:"600px"}}>
-    <CImage className="d-block w-100" src="./img/hero/hero5.jpg" alt="slide 5" />
+    <CImage className="d-block w-100" src="./img/hero/hero5.png" alt="slide 5" />
     <CCarouselCaption className="d-block" style={captionStyle}>
       <h2 style={headingStyle}>RISE with SAP</h2>
       <p className="d-none d-md-block" style={{maxWidth:"80%", animationDelay:"0.4s", margin:"0 auto 30px auto"}}>Transition to the cloud seamlessly with RISE with SAP, empowering your existing systems with future-ready cloud capabilities.</p>

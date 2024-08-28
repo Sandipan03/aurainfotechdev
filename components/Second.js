@@ -55,7 +55,7 @@ function Second({className}) {
 
     </div>
   </header>
-  <section id="hero" className={`${styles.hero} ${styles.section} ${styles["dark-background"]}`}>
+  {/* <section id="hero" className={`${styles.hero} ${styles.section} ${styles["dark-background"]}`}>
 
 <div  id="hero-carousel" data-bs-interval="5000" className={`container carousel carousel-fade`} data-bs-ride="carousel">
 
@@ -65,7 +65,7 @@ function Second({className}) {
       <h2 className={`animate__animated animate__fadeInDown`}>Contact Us</h2>
       <p className={`animate__animated animate__fadeInUp`}>We believe in Creating Value for our Customers by Integrating Technology with Innovation and Agility.
 </p>
-      {/* <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a> */}
+      <a href="#about" className={`${styles["btn-get-started"]} animate__animated animate__fadeInUp scrollto`}>Read More</a>
     </div>
   </div>
 
@@ -106,6 +106,12 @@ function Second({className}) {
 </div>
 
 
+</section> */}
+<section>
+  <div className={` ${styles.banner}`}>
+    <h2>Contact Us</h2>
+    <p>We believe in Creating Value for our Customers by Integrating Technology with Innovation and Agility.</p>
+  </div>
 </section>
   <section id="contact" className={`${styles.contact} ${styles.section}`} style={{marginTop:"100px"}}>
 
