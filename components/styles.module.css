@@ -1416,7 +1416,11 @@
   color: white;
   text-decoration: none;
 }
-
+/* @media (min-width: 1024px) {
+  .h2 {
+    font-size: 30px;
+  }
+} */
 @media (min-width: 1024px) {
   .hero p {
     max-width: 60%;
