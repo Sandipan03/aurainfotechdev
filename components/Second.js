@@ -194,13 +194,13 @@ solution.
       <h3 className={`sitename`}>Aura InfoTech</h3>
       </div>
       {/* <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> */}
-      <div className={`${styles["social-links"]} d-flex justify-content-center`}>
+      {/* <div className={`${styles["social-links"]} d-flex justify-content-center`}>
         <a href=""><i className={`bi bi-twitter-x`}></i></a>
         <a href=""><i className={`bi bi-facebook`}></i></a>
         <a href=""><i className={`bi bi-instagram`}></i></a>
         <a href=""><i className={`bi bi-skype`}></i></a>
         <a href=""><i className={`bi bi-linkedin`}></i></a>
-      </div>
+      </div> */}
       <div className={`container`}>
         <div className={styles.copyright}>
           <span>Copyright</span> <strong className={`px-1 sitename`}>Aura InfoTech</strong> <span>All Rights Reserved</span>
