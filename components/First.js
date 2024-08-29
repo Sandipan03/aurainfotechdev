@@ -84,7 +84,7 @@ function First({className}) {
           </li>
           <li><Link href="/contact" className={headClicked==='contact'?styles.active:''} onClick={()=>{setheadClicked('contact')}} >Contact Us</Link></li>
         </ul>
-        <i className={`${styles["mobile-nav-toggle"]} d-xl-none bi bi-list`}></i>
+        <i className={`mobile-nav-toggle d-xl-none bi bi-list`}></i>
       </nav>
 
     </div>
